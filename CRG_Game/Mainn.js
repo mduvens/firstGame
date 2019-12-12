@@ -194,7 +194,7 @@ jogador1.mesh.addEventListener('collision', function (obj, vel, angularV) {
     //console.log(jogador1.mesh.vida)
 })
 
-
+let loaded = false;
 loader.load('obj/scene.gltf', function (gltf) {
     model = gltf.scene
     model.scale.set(.15, .15, .15)
@@ -203,6 +203,7 @@ loader.load('obj/scene.gltf', function (gltf) {
     model.position.x += 40
     //  model.rotation.x -= Math.PI/2
     scene.add(model)
+    loaded = true
     //renderer.render(scene,camera)
 });
 
