@@ -262,7 +262,9 @@ onKeyDown = function (e) {
     switch (e.keyCode) {
         case 81:
             limparVelocidades()
+            if(loaded == true){
             controls.lock()
+            }
 
             break;
         case 69:
