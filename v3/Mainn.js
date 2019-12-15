@@ -265,19 +265,19 @@ function animate() {
             controls.getObject().position.y = 150;
             podeSaltar = true;
         }
-        // if (jogador1.mesh.vida === 0) {
-        //     alert("MORRESTE")
-        //     limparMapa()
-        //     pontos = 0
-        //     deadZombies = 0
-        //     addZombies()
-        //     addComida()
-        //     camera.position.set(3400, 100, 3200)
-        //     jogador1.mesh.vida = 100;
-        //     console.log(numeroZombies)
-        //     camera.rotation.set(0,Math.PI/2,0)
+        if (jogador1.mesh.vida === 0) {
+            alert("MORRESTE")
+            limparMapa()
+            pontos = 0
+            deadZombies = 0
+            addZombies()
+            addComida()
+            camera.position.set(3400, 100, 3200)
+            jogador1.mesh.vida = 100;
+            console.log(numeroZombies)
+            camera.rotation.set(0,Math.PI/2,0)
     
-        // }
+        }
         if (frame % 60 === 0) {
             if (fimRonda) {
                 fimRonda = false
