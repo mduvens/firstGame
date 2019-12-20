@@ -378,20 +378,20 @@ function animate() {
             controls.getObject().position.y = 150;
             podeSaltar = true;
         }
-        // if (jogador1.mesh.vida === 0) {
-        //     alert("MORRESTE")
-        //     limparMapa()
-        //     scene.remove(final.mesh)
-        //     deadInimigos = 0
-        //     addInimigos()
-        //     addFinal()
-        //     camera.position.set(3400, 100, 3200)
-        //     jogador1.mesh.vida = 100;
-        //     console.log(numeroInimigos)
-        //     camera.rotation.set(0,Math.PI/2,0)
-    
-        // }
-       
+        // COMENTAR ESTA SECÇÃO -> GOD MODE +++++++++++++++++
+         if (jogador1.mesh.vida === 0) {
+             alert("MORRESTE")
+             limparMapa()
+             scene.remove(final.mesh)
+             deadInimigos = 0
+             addInimigos()
+             addFinal()
+             camera.position.set(3400, 100, 3200)
+             jogador1.mesh.vida = 100;
+             console.log(numeroInimigos)
+             camera.rotation.set(0,Math.PI/2,0)
+        }
+       // ++++++++++++++++++++++++++++++++++++++++++++++++++++
         
        
         if(frame % 40 == 0){
