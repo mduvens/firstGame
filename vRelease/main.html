@@ -1,0 +1,153 @@
+<!doctype html>
+
+<head>
+        <meta charset=UTF-8 name="viewport" content="width=device-width">
+        <title>___________JOGO CRG___________ </title>
+        <style>
+                html,
+                body {
+                        padding: 0;
+                        margin: 0;
+                }
+
+                canvas {
+                        display: block;
+                }
+
+                #info {   
+                        position: absolute;
+                        text-align: left;
+                        color: white;
+                        z-index: 100;
+                        display: block;
+                        font-family:"Courier New", Courier, monospac ;
+                        top: 10px;
+                        left: 10px;
+                       
+                }
+                #infoStart{
+                        color:rgb(175, 0, 0);
+                        font-size: 20px;
+                        font-weight: bold;
+                }
+                #italico{
+                        color: rgb(5, 154, 5)
+                       
+                }
+                #infoResto{
+                        color:royalblue
+                }
+                #r {
+                        position: absolute;
+                        top: 10px;
+                        right: 60px;
+                        text-align: left;
+                        color: red;
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-family:"Courier New", Courier, monospac ;
+
+                }
+                #g {
+                        position: absolute;
+                        top: 10px;
+                        right: 40px;
+                        text-align: left;
+                        color: green;
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-family:"Courier New", Courier, monospac ;
+
+                }
+
+                #b {
+                        top: 10px;
+                        right: 20px;
+                        position: absolute;                   
+                        text-align: left;
+                        color: blue;
+                     
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-family:"Courier New", Courier, monospac ;
+
+                }
+                #hp{
+                        color:rgb(2, 74, 25);
+                        position: absolute;
+                        top: 88%;
+                        left: .5%;
+                        font-size: 70px;
+                        font-weight: bold;
+                        font-family:"Courier New", Courier, monospac ;
+                        
+                }
+                .vida-jogador {
+                        position: absolute;
+                        width: 120px;
+                       
+                        top: 88%;
+                        left: 9%;
+                        /* border: 2px solid #fbfbfb;            */
+                        color: rgb(110, 16, 138);
+                       
+                }
+                .valor-vida {
+                        /* width: 100%; */
+                        height: 100%;
+                        /* display:flex; */
+                        color: rgb(31, 150, 7); 
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 70px;
+                        font-weight: bold;
+                        font-family:"Courier New", Courier, monospac ;                      
+                        text-shadow: 5px 5px rgb(2, 74, 25);
+                }
+               
+                
+                
+        </style>
+</head>
+
+<body>
+        <div id="container" charset="utf-8"></div>
+        <div id="info">
+                <b id='infoStart'>Q -> Start</b><br> 
+                <b id='infoResto'>P -></b> <i id ='italico'>Pause</i><br> 
+                <b id='infoResto'>SHIFT -></b> <i id ='italico'>Sprint</i> <br>
+                <b id='infoResto'>SPACE -></b> <i id ='italico'>Jump</i> <br>
+                <b id='infoResto'>CLICK/HOLD -></b> <i id ='italico'>Shoot</i>
+        </div>
+        <div id='hp'>HP:</div>
+        <div id="r">R</div>
+        <div id="g">G</div>
+        <div id="b">B</div>
+        <div class="vida-jogador">
+                <div class= "valor-vida"></div>
+        </div>
+       
+        
+                <script src="cannon.js"charset="UTF-8">
+                </script>
+                <script src="ammo.js" charset="UTF-8"></script>
+                <script src="threee.js" charset="UTF-8"></script>
+                <script src="GLTFLoader.js" charset="UTF-8"></script>
+                <script src="physi.js" charset="UTF-8"></script>
+                <script src="physijs_worker.js" charset="UTF-8"></script>
+                <script src="PointerLockControls.js" charset="UTF-8"></script>
+                <script src="gsap.min.js"></script>
+                <script src="funcoes.js" charset="UTF-8"></script>
+                <script src="Mainn.js" charset="UTF-8"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
