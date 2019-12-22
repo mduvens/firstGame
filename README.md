@@ -1,3 +1,3 @@
 # Latest version -> vRelease
 
-lusofps.000webhostapp.com
+www.lusofps.000webhostapp.com
